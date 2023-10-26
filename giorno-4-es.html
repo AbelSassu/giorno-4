@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+    content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="reset" href="css/reset.css">
     <link rel="stylesheet" href="css/style-g-4.css">
     <title>Document</title>
 </head>
 <body>
-    <img src="img/sfondo.png">
     <header>
         <div class="immagine">
             <img src="img/logo.svg" alt="Epicode" width="200">
@@ -18,9 +19,21 @@
        </div>
       <nav>
         <ul>
-            <li>Home</li>
-            <li>Articoli</li>
-            <li>Lavora con noi</li>
+            <li>
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+                <a href="linkhome.com">Home</a>
+                <ion-icon name="arrow-back-sharp"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+                <a href="linkarticoli.com">Articoli</a>
+                <ion-icon name="arrow-back-sharp"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+                <a href="linklavora.com">Lavora con noi</a>
+                <ion-icon name="arrow-back-sharp"></ion-icon>
+            </li>
         </ul>
       </nav>
     </header>
@@ -29,9 +42,10 @@
         <section>
                 <h1>Come creare un template per i post</h1>
             <div class="mario">
-                <ion-icon name="pencil-outline"></ion-icon>
-                <p>
-                    di Mario Rossi - Pubblicato il 25/10/2020</p>
+                    <p>
+                <ion-icon name="pencil"></ion-icon>
+                di Mario Rossi - <ion-icon name="time-sharp"></ion-icon>
+                Pubblicato il 25/10/2020</p>
             </div>
             <article>
                 <div>
@@ -50,7 +64,7 @@
                         <li>Contenuti centrali variabili del tag 
                          <div>
                              &lt;main&gt;
-                         </div>
+                         </div> (corpo principale)
                         </li>
                         <li>Contenuti di fine pagina comuni, da inserise nel tag 
                             <div>
@@ -60,8 +74,7 @@
                     </ul>
                 </div>
                 <div>
-                    <p>Formattazione del codice</p> 
-                    <p>
+                    <p class="format">Formattazione del codice <br> 
                         Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong>selezionare con i CSS</strong>. Perciò i passi saranno:
                     </p>
                    <ol>
@@ -75,7 +88,7 @@
                   </div> 
                 <div>
                  <table>
-                    <caption>Diffusione dei CSS</caption>
+                    <caption><b>Diffusione dei CSS</b></caption>
                     <tr>
                         <th>Anno</th>
                         <th>% di utilizzo</th>
@@ -111,22 +124,25 @@
                  </table>
               </div>
                  <p>
-                     Un test di validazione potrà essere fatto tramite il  <a title="W3C"
+                     Un test di validazione potrà essere fatto tramite il  <a id="tool" title="W3C validatore"
                      href="https://validator.w3.org/">tool online
                      </a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
-                     <iframe src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="troll"></iframe>
+                     <iframe
+                     src="https://www.youtube.com/embed/dvOvHXruEDM"
+                     title="YouTube video player"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen
+                   ></iframe>
             </article>
         </section>
-            <form>
-                <div>
+             <form>
                     <h2>NOVITÀ</h2>
                     <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
-                </div>
                     <fieldset>
                         <input type="email" value="Inserisci l'e-mail">
-                        <input type="button" value="Iscriviti!">
+                        <button type="submit">Iscriviti!</button>
                     </fieldset>
-            </form>
+             </form>
             <aside>
                 <div>
                     <h2>
@@ -168,5 +184,7 @@
             </p>
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
