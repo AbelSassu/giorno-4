@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: auto;
+    padding: 12px;
+}
+header {
+    padding: 10px;
+    box-shadow: -2px 3px 5px 0px #292828; 
+    background-color: #0b5d8dc0;
+}
+header div {
+    text-align: center;
+    color: white;
+}
+nav ul li {
+    color: white;
+    text-align: center;
+    list-style-position: inside;
+    list-style-type:upper-roman;
+}
+.immagine {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+main {
+    background-color: white;
+}
+.mario {
+    color: gray;
+}
